@@ -176,22 +176,22 @@ function correctAnswer(i, secretNumber, prediction, minDummy, maxDummy) {
   console.log(
     `Congratulations!!!\n\nYou figured out that the Secret Number was ${secretNumber}`
   );
-  if (i === 1) {
+  if (i-1 === 1) {
     console.log(
       `and you figured it out on your FIRST GUESS...\nThat seems a little fishy...\nThere are a lot of numbers between ${minDummy} and ${maxDummy}\nI'm not saying your a cheater...\n but if I had your luck, I'd play the lottery\n(or keep cheating at cards...)\n`
     );
   } else if (i < prediction) {
     let difference = prediction - i;
     console.log(
-      `and you figured it out after only ${i} guesses.\nI'm really impressed with you Dum-Dum.\nYou still had ${difference} guess(es) to go.\nI guess from now on I should call you "Smart-Smart"\nBut you will always be Dum-Dum to me.\n`
+      `and you figured it out after only ${i-1} guesses.\nI'm really impressed with you Dum-Dum.\nYou still had ${difference} guess(es) to go.\nI guess from now on I should call you "Smart-Smart"\nBut you will always be Dum-Dum to me.\n`
     );
   } else if ((i === prediction)) {
     console.log(
-      `My prediciton came true\nYou figured it out after ${i} guesses.\nGood job, Dum-Dum.\n`
+      `My prediciton came true\nYou figured it out after ${i-1} guesses.\nGood job, Dum-Dum.\n`
     );
   } else if (i > prediction) {
     console.log(
-      `WOW, Dum-Dum\nJust... WOW\nYou figured it out after ${i} guesses.\nYou really earned your nickname.\n(It's "Dum-Dum")\nI feel like I need to remind you because it only should have taken ${prediction} guesses to figure out my Secret Number`
+      `WOW, Dum-Dum\nJust... WOW\nYou figured it out after ${i-1} guesses.\nYou really earned your nickname.\n(It's "Dum-Dum")\nI feel like I need to remind you because it only should have taken ${prediction} guesses to figure out my Secret Number`
     );
   } else {
     console.log(
