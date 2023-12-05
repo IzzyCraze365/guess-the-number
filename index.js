@@ -185,7 +185,7 @@ function correctAnswer(i, secretNumber, prediction, minDummy, maxDummy) {
     console.log(
       `and you figured it out after only ${i} guesses.\nI'm really impressed with you Dum-Dum.\nYou still had ${difference} guess(es) to go.\nI guess from now on I should call you "Smart-Smart"\nBut you will always be Dum-Dum to me.\n`
     );
-  } else if ((i = prediction)) {
+  } else if ((i === prediction)) {
     console.log(
       `My prediciton came true\nYou figured it out after ${i} guesses.\nGood job, Dum-Dum.\n`
     );
